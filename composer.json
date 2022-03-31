@@ -1,5 +1,5 @@
 {
-    "name": "4fresh/vk-php-sdk",
+    "name": "vkcom/vk-php-sdk",
     "description": "VK PHP SDK",
     "keywords": ["vk", "sdk"],
     "type": "library",
@@ -15,7 +15,7 @@
     "repositories": [
         {
             "type": "git",
-            "url": "https://github.com/AleksandraMishko/4fresh_test-vk-php-sdk"
+            "url": "https://github.com/VKCOM/vk-api-schema"
         }
     ],
     "autoload": {
