@@ -15,7 +15,7 @@
     "repositories": [
         {
             "type": "git",
-            "url": "https://github.com/VKCOM/vk-api-schema"
+            "url": "https://github.com/AleksandraMishko/4fresh_test-vk-php-sdk"
         }
     ],
     "autoload": {
