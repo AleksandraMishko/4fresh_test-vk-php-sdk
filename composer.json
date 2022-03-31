@@ -1,5 +1,5 @@
 {
-    "name": "vkcom/vk-php-sdk",
+    "name": "4fresh/vk-php-sdk",
     "description": "VK PHP SDK",
     "keywords": ["vk", "sdk"],
     "type": "library",
