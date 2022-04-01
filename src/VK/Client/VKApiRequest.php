@@ -36,14 +36,14 @@ class VKApiRequest {
     private $version;
 
     /**
-     * @var string|null
+     * @var string
      */
     private $language;
 
     /**
      * VKApiRequest constructor.
      * @param string $api_version
-     * @param string|null $language
+     * @param string $language
      * @param string $host
      */
     public function __construct(string $api_version, string $language, string $host) {
