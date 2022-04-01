@@ -4,13 +4,13 @@ namespace VK\Client;
 
 class VKApiError {
 
-    protected const KEY_ERROR_CODE = 'error_code';
-    protected const KEY_ERROR_MSG = 'error_msg';
-    protected const KEY_CAPTCHA_SID = 'captcha_sid';
-    protected const KEY_CAPTCHA_IMG = 'captcha_img';
-    protected const KEY_CONFIRMATION_TEXT = 'confirmation_text';
-    protected const KEY_REDIRECT_URI = 'redirect_uri';
-    protected const KEY_REQUEST_PARAMS = 'request_params';
+    const KEY_ERROR_CODE = 'error_code';
+    const KEY_ERROR_MSG = 'error_msg';
+    const KEY_CAPTCHA_SID = 'captcha_sid';
+    const KEY_CAPTCHA_IMG = 'captcha_img';
+    const KEY_CONFIRMATION_TEXT = 'confirmation_text';
+    const KEY_REDIRECT_URI = 'redirect_uri';
+    const KEY_REQUEST_PARAMS = 'request_params';
 
     protected $error_code;
     protected $error_msg;
@@ -39,7 +39,7 @@ class VKApiError {
      *
      * @return int|null
      */
-    public function getErrorCode(): ?int {
+    public function getErrorCode(): int {
         return $this->error_code;
     }
 
@@ -48,7 +48,7 @@ class VKApiError {
      *
      * @return string|null
      */
-    public function getErrorMsg(): ?string {
+    public function getErrorMsg(): string {
         return $this->error_msg;
     }
 
@@ -57,7 +57,7 @@ class VKApiError {
      *
      * @return string|null
      */
-    public function getCaptchaSid(): ?string {
+    public function getCaptchaSid(): string {
         return $this->captcha_sid;
     }
 
@@ -66,7 +66,7 @@ class VKApiError {
      *
      * @return string|null
      */
-    public function getCaptchaImg(): ?string {
+    public function getCaptchaImg(): string {
         return $this->captcha_img;
     }
 
@@ -75,7 +75,7 @@ class VKApiError {
      *
      * @return string|null
      */
-    public function getConfirmationText(): ?string {
+    public function getConfirmationText(): string {
         return $this->confirmation_text;
     }
 
@@ -84,7 +84,7 @@ class VKApiError {
      *
      * @return string|null
      */
-    public function getRedirectUri(): ?string {
+    public function getRedirectUri(): string {
         return $this->redirect_uri;
     }
 
@@ -93,7 +93,7 @@ class VKApiError {
      *
      * @return array|null
      */
-    public function getRequestParams(): ?array {
+    public function getRequestParams(): array {
         return $this->request_params;
     }
 

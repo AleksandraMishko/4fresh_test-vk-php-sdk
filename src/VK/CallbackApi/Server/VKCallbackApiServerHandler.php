@@ -5,18 +5,18 @@ namespace VK\CallbackApi\Server;
 use VK\CallbackApi\VKCallbackApiHandler;
 
 abstract class VKCallbackApiServerHandler extends VKCallbackApiHandler {
-    protected const EVENT_KEY_TYPE = 'type';
-    protected const EVENT_KEY_OBJECT = 'object';
-    protected const EVENT_KEY_SECRET = 'secret';
-    protected const EVENT_KEY_GROUP_ID = 'group_id';
+    const EVENT_KEY_TYPE = 'type';
+    const EVENT_KEY_OBJECT = 'object';
+    const EVENT_KEY_SECRET = 'secret';
+    const EVENT_KEY_GROUP_ID = 'group_id';
 
-    protected const CALLBACK_EVENT_CONFIRMATION = 'confirmation';
+    const CALLBACK_EVENT_CONFIRMATION = 'confirmation';
 
     /**
      * @param int $group_id
      * @param null|string $secret
      */
-    abstract function confirmation(int $group_id, ?string $secret);
+    abstract function confirmation(int $group_id, string $secret);
 
     /**
      * @param $event

@@ -300,13 +300,13 @@ class ServerHandler extends VK\CallbackApi\Server\VKCallbackApiServerHandler {
     const GROUP_ID = 123999;
     const CONFIRMATION_TOKEN = 'e67anm1';
 
-    function confirmation(int $group_id, ?string $secret) {
+    function confirmation(int $group_id, string $secret) {
         if ($secret === static::SECRET && $group_id === static::GROUP_ID) {
             echo static::CONFIRMATION_TOKEN;
         }
     }
     
-    public function messageNew(int $group_id, ?string $secret, array $object) {
+    public function messageNew(int $group_id, string $secret, array $object) {
         echo 'ok';
     }
 }

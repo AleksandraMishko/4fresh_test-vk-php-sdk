@@ -40,8 +40,8 @@ use VK\Actions\Wall;
 use VK\Actions\Widgets;
 
 class VKApiClient {
-    protected const API_VERSION = '5.101';
-    protected const API_HOST = 'https://api.vk.com/method';
+    const API_VERSION = '5.101';
+    const API_HOST = 'https://api.vk.com/method';
 
     /**
      * @var VKApiRequest
@@ -228,7 +228,7 @@ class VKApiClient {
      * @param string $api_version
      * @param string|null $language
      */
-    public function __construct(string $api_version = self::API_VERSION, ?string $language = null) {
+    public function __construct(string $api_version = self::API_VERSION, string $language = null) {
         $this->request = new VKApiRequest($api_version, $language, self::API_HOST);
     }
 
